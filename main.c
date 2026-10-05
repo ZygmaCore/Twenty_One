@@ -12,8 +12,16 @@ int main() {
     char barrier = '\x3D';
     int loop = 0, chip = 1000, random, value = 0, card2, player = 0, dealer, pilihan;
     int a = 0, two = 0, three = 0, four = 0, five = 0, six = 0, seven = 0, eight = 0, nine = 0, ten = 0, j = 0, q = 0, k= 0;
-    int disabled0 = 0, disabled1 = 0, disabled2 = 0, disabled3 = 0;
-    int disabled4 = 0, disabled5 = 0, disabled6 = 0, disabled7 = 0;
+    short disabled0 = 0, disabled1 = 0, disabled2 = 0, disabled3 = 0;
+    short disabled4 = 0, disabled5 = 0, disabled6 = 0, disabled7 = 0;
+    short disabled8 = 0, disabled9 = 0, disabled10 = 0, disabled11 = 0;
+    short disabled12 = 0, disabled13 = 0, disabled14 = 0, disabled15 = 0;
+    short disabled16 = 0, disabled17 = 0, disabled18 = 0, disabled19 = 0;
+    short disabled20 = 0, disabled21 = 0, disabled22 = 0, disabled23 = 0;
+    short disabled24 = 0, disabled25 = 0, disabled26 = 0, disabled27 = 0;
+    short disabled28 = 0, disabled29 = 0, disabled30 = 0, disabled31 = 0;
+    short disabled32 = 0, disabled33 = 0, disabled34 = 0, disabled35 = 0;
+    short disabled36 = 0, disabled37 = 0, disabled38 = 0, disabled39 = 0;
 
     int i = 0;
 
@@ -98,9 +106,158 @@ int main() {
                     }
                     value += 2;
                 }
-                card2 = random;
-                printf("KARTU ANDA ADALAH %d\n", card2 + 1);
-                value += random + 1;
+                if (random == 1) {
+                    two = rand() % 4;
+                    if (two == 0 && disabled4 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♠    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled4++;
+                    } else if (two == 1 && disabled5 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♥    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled5++;
+                    } else if (two == 2 && disabled6 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♦    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled6++;
+                    } else if (two == 3 && disabled7 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♣    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled7++;
+                    } else {
+                        goto random_again;
+                    }
+                    value += 3;
+                }
+                if (random == 1) {
+                    two = rand() % 4;
+                    if (two == 0 && disabled4 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♠    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled4++;
+                    } else if (two == 1 && disabled5 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♥    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled5++;
+                    } else if (two == 2 && disabled6 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♦    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled6++;
+                    } else if (two == 3 && disabled7 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♣    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled7++;
+                    } else {
+                        goto random_again;
+                    }
+                    value += 4;
+                }
+                if (random == 1) {
+                    two = rand() % 4;
+                    if (two == 0 && disabled4 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♠    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled4++;
+                    } else if (two == 1 && disabled5 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♥    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled5++;
+                    } else if (two == 2 && disabled6 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♦    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled6++;
+                    } else if (two == 3 && disabled7 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♣    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled7++;
+                    } else {
+                        goto random_again;
+                    }
+                    value += 5;
+                }
+                if (random == 1) {
+                    two = rand() % 4;
+                    if (two == 0 && disabled4 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♠    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled4++;
+                    } else if (two == 1 && disabled5 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♥    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled5++;
+                    } else if (two == 2 && disabled6 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♦    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled6++;
+                    } else if (two == 3 && disabled7 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♣    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled7++;
+                    } else {
+                        goto random_again;
+                    }
+                    value += 6;
+                }
+                if (random == 1) {
+                    two = rand() % 4;
+                    if (two == 0 && disabled4 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♠    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled4++;
+                    } else if (two == 1 && disabled5 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♥    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled5++;
+                    } else if (two == 2 && disabled6 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♦    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled6++;
+                    } else if (two == 3 && disabled7 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♣    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled7++;
+                    } else {
+                        goto random_again;
+                    }
+                    value += 7;
+                }
+                if (random == 1) {
+                    two = rand() % 4;
+                    if (two == 0 && disabled4 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♠    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled4++;
+                    } else if (two == 1 && disabled5 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♥    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled5++;
+                    } else if (two == 2 && disabled6 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♦    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled6++;
+                    } else if (two == 3 && disabled7 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♣    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled7++;
+                    } else {
+                        goto random_again;
+                    }
+                    value += 8;
+                }
+                if (random == 1) {
+                    two = rand() % 4;
+                    if (two == 0 && disabled4 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♠    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled4++;
+                    } else if (two == 1 && disabled5 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♥    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled5++;
+                    } else if (two == 2 && disabled6 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♦    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled6++;
+                    } else if (two == 3 && disabled7 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♣    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled7++;
+                    } else {
+                        goto random_again;
+                    }
+                    value += 9;
+                }
+                if (random == 1) {
+                    two = rand() % 4;
+                    if (two == 0 && disabled4 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♠    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled4++;
+                    } else if (two == 1 && disabled5 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♥    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled5++;
+                    } else if (two == 2 && disabled6 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♦    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled6++;
+                    } else if (two == 3 && disabled7 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♣    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled7++;
+                    } else {
+                        goto random_again;
+                    }
+                    value += 10;
+                }
             } else if (random == 10) {
                 card = 'J';
                 printf("KARTU ANDA ADALAH %c\n", card);
