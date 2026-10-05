@@ -4,8 +4,9 @@
 
 
 int main() {
-    srand(time(NULL));
-    int r = rand() % 13;
-    printf("%d\n", r);
+    printf("┌─────────┐\n│ K       │\n│         │\n│    ♠    │\n│         │\n│       K │\n└─────────┘\n");
+    printf("┌─────────┐\n│ K       │\n│         │\n│    ♥    │\n│         │\n│       K │\n└─────────┘\n");
+    printf("┌─────────┐\n│ K       │\n│         │\n│    ♦    │\n│         │\n│       K │\n└─────────┘\n");
+    printf("┌─────────┐\n│ K       │\n│         │\n│    ♣    │\n│         │\n│       K │\n└─────────┘\n");
     return 0;
 }
