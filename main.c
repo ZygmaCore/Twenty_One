@@ -13,6 +13,9 @@ int main() {
     int loop = 0, chip = 1000, random, value = 0, card2, player = 0, dealer, pilihan;
     int a = 0, two = 0, three = 0, four = 0, five = 0, six = 0, seven = 0, eight = 0, nine = 0, ten = 0, j = 0, q = 0, k= 0;
     int disabled0 = 0, disabled1 = 0, disabled2 = 0, disabled3 = 0;
+    int disabled4 = 0, disabled5 = 0, disabled6 = 0, disabled7 = 0;
+
+    int i = 0;
 
     char card;
 
@@ -39,10 +42,10 @@ int main() {
 
         while (pilihan == 1) {
             // ini buat ngasih 2 kartu ke player ya
-            if (player < 50) {
+            if (player < 100) {
             random_again:
                 player++;
-                random = rand() % 1;
+                random = rand() % 2;
             } else {
                 printf("%d", value);
                 player++;
@@ -70,14 +73,31 @@ int main() {
                 } else if (a == 3 && disabled3 == 0) {
                     printf("┌─────────┐\n│ A       │\n│         │\n│    ♣    │\n│         │\n│       A │\n└─────────┘\n");
                     disabled3++;
-                } else if (disabled0 == 1 && disabled1 == 1 && disabled2 == 1 && disabled3 == 0) {
-                    goto sini;
                 } else {
                     goto random_again;
                 }
                 value += 11;
                 printf("\n\n(%d)\n", value);
             } else if (random > 0 && random < 10) {
+                if (random == 1) {
+                    two = rand() % 4;
+                    if (two == 0 && disabled4 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♠    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled4++;
+                    } else if (two == 1 && disabled5 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♥    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled5++;
+                    } else if (two == 2 && disabled6 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♦    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled6++;
+                    } else if (two == 3 && disabled7 == 0) {
+                        printf("┌─────────┐\n│ 2       │\n│         │\n│    ♣    │\n│         │\n│       2 │\n└─────────┘\n");
+                        disabled7++;
+                    } else {
+                        goto random_again;
+                    }
+                    value += 2;
+                }
                 card2 = random;
                 printf("KARTU ANDA ADALAH %d\n", card2 + 1);
                 value += random + 1;
