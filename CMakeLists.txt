@@ -5,5 +5,6 @@ set(CMAKE_C_STANDARD 11)
 
 add_executable(project2
         main.c
-#        playground.c
+#        task1.c
+        #        playground.c
 )
